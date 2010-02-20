@@ -1,0 +1,12 @@
+
+
+This archive contains the distribution Form-Sensible-Reflector-DBIC, version
+0.03:
+
+  A Form::Sensible::Form::Reflector subclass to reflect off of DBIC schema classes
+
+This software is copyright (c) 2010 by Devin Austin.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
