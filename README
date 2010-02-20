@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Form-Sensible-Reflector-DBIC, version
-0.03:
+0.031:
 
   A Form::Sensible::Form::Reflector subclass to reflect off of DBIC schema classes
 

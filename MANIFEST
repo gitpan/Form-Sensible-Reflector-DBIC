@@ -7,7 +7,6 @@ README
 TODO
 dist.ini
 examples/dump_basic.pl
-lib/Form/Sensible/Reflector.pm
 lib/Form/Sensible/Reflector/DBIC.pm
 share/templates/fileselector.tt
 share/templates/form_end.tt
@@ -27,7 +26,6 @@ share/templates/trigger.tt
 share/templates/unknown.tt
 t/01test_reflector.t
 t/catalyst.t
-t/dump_dbic.t
 t/lib/TestSchema.pm
 t/lib/TestSchema/Result/Test.pm
 t/release-pod-coverage.t
