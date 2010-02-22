@@ -2,8 +2,6 @@
 abstract: 'A Form::Sensible::Form::Reflector subclass to reflect off of DBIC schema classes'
 author:
   - 'Devin Austin <dhoss@cpan.org>'
-configure_requires:
-  File::ShareDir::Install: 0
 generated_by: 'Dist::Zilla version 1.100160'
 license: perl
 meta-spec:
@@ -18,4 +16,4 @@ requires:
   Form::Sensible: "\"\""
   Moose: 0.93
   Test::Simple: 0.88
-version: 0.031
+version: 0.032

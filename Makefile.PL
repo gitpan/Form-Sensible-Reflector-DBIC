@@ -6,8 +6,6 @@ use warnings;
 
 use ExtUtils::MakeMaker 6.11;
 
-use File::ShareDir::Install;
-install_share "share";
 
 
 my %WriteMakefileArgs = (
@@ -19,7 +17,7 @@ my %WriteMakefileArgs = (
                        'AUTHOR' => 'Devin Austin <dhoss@cpan.org>',
                        'ABSTRACT' => 'A Form::Sensible::Form::Reflector subclass to reflect off of DBIC schema classes',
                        'EXE_FILES' => [],
-                       'VERSION' => '0.031',
+                       'VERSION' => '0.032',
                        'LICENSE' => 'perl',
                        'PREREQ_PM' => {
                                         'DateTime' => '""',
@@ -38,7 +36,5 @@ delete $WriteMakefileArgs{LICENSE}
 
 WriteMakefile(%WriteMakefileArgs);
 
-package MY;
-use File::ShareDir::Install qw(postamble);
 
 

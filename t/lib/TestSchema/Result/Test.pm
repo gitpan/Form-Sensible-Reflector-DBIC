@@ -1,5 +1,5 @@
 package TestSchema::Result::Test;
-our $VERSION = '0.031';
+our $VERSION = '0.032';
 use base qw/DBIx::Class/;
 
 __PACKAGE__->load_components(qw/ Core  /);
