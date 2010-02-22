@@ -2,7 +2,7 @@ package Form::Sensible::Reflector::DBIC;
 use Moose;
 use namespace::autoclean;
 extends 'Form::Sensible::Reflector';
-our $VERSION = "0.032";
+our $VERSION = "0.033";
 
 # ABSTRACT: A Form::Sensible::Form::Reflector subclass to reflect off of DBIC schema classes
 
@@ -85,12 +85,31 @@ Form::Sensible::Form::Reflector::DBIC - A reflector class based on Form::Sensibl
 
 =head1 VERSION
 
-version 0.032
+version 0.033
 
 =cut
 
 =head1 SYNOPSIS
 
-cocks
+	my $schema = TestSchema->connect('dbi:SQLite::memory:');
+	$schema->deploy;
+	use Form::Sensible;
+	use Form::Sensible::Reflector::DBIC;
+	## name must reflect the table which we are reflecting
+
+	my $dt = DateTime->now;
+
+	my $form = Form::Sensible::Reflector::DBIC->create_form(
+	    {
+	        handle => $schema->resultset("Test"),
+	        form   => { name => 'test' }
+	    }
+	);
+	my $submit_button = Form::Sensible::Field::Trigger->new( name => 'submit' );
+	my $renderer = Form::Sensible->get_renderer('HTML');
+
+	$form->add_field($submit_button);
+	$form->set_values( { date => $dt } );
+	my $output = $renderer->render($form)->complete;
 
 =cut

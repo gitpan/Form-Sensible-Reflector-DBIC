@@ -16,4 +16,4 @@ requires:
   Form::Sensible: "\"\""
   Moose: 0.93
   Test::Simple: 0.88
-version: 0.032
+version: 0.033
