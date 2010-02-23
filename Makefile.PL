@@ -17,15 +17,16 @@ my %WriteMakefileArgs = (
                        'AUTHOR' => 'Devin Austin <dhoss@cpan.org>',
                        'ABSTRACT' => 'A Form::Sensible::Form::Reflector subclass to reflect off of DBIC schema classes',
                        'EXE_FILES' => [],
-                       'VERSION' => '0.034',
+                       'VERSION' => '0.0341',
                        'LICENSE' => 'perl',
                        'PREREQ_PM' => {
                                         'DateTime' => '""',
+                                        'SQL::Translator' => '0.11002',
                                         'ExtUtils::MakeMaker' => '6.11',
                                         'Data::Dumper' => '""',
                                         'Test::Simple' => '0.88',
-                                        'DBIx::Class' => '""',
                                         'Form::Sensible' => '""',
+                                        'DBIx::Class' => '""',
                                         'Moose' => '0.93'
                                       }
                      );
