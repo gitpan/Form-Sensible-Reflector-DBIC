@@ -24,11 +24,12 @@ my %WriteMakefileArgs = (
     'Data::Dumper' => '0',
     'DateTime' => '0',
     'Form::Sensible' => '0.20010',
+    'Form::Sensible::Reflector' => '0.01',
     'Moose' => '0.93',
     'SQL::Translator' => '0.11002',
     'Test::Simple' => '0.88'
   },
-  'VERSION' => '0.0345',
+  'VERSION' => '0.0346',
   'test' => {
     'TESTS' => 't/*.t'
   }
