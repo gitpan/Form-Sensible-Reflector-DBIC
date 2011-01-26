@@ -1,5 +1,4 @@
 package TestSchema;
-our $VERSION = '0.0341';
 use strict;
 use warnings;
 

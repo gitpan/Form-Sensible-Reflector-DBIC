@@ -1,3 +1,12 @@
+0.344   2010-11-28
+ - added form name auto-detection code
+ - adjusted to accept resultset, row, or result_source as a handle.
+0.343   2010-06-25
+ - added new API changes to make compatible with FSDelegateConnection stuff
+ - added ability to define validation inside schema
+0.342   2010-02-26
+ - fixed docs
+ - added default_form_value for *inside* schemas, rendered as default_value in the form
 0.341   2010-02-23
  - added prereq for SQL::Translator v. 0.11002 
 0.34    2010-02-21
