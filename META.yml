@@ -20,4 +20,4 @@ requires:
   Moose: 0.93
   SQL::Translator: 0.11002
   Test::Simple: 0.88
-version: 0.0347
+version: 0.0348

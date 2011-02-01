@@ -28,7 +28,7 @@ my %WriteMakefileArgs = (
     'SQL::Translator' => '0.11002',
     'Test::Simple' => '0.88'
   },
-  'VERSION' => '0.0347',
+  'VERSION' => '0.0348',
   'test' => {
     'TESTS' => 't/*.t'
   }
