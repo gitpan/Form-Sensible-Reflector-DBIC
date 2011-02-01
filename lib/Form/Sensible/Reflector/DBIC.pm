@@ -2,7 +2,7 @@ package Form::Sensible::Reflector::DBIC;
 use Moose;
 use namespace::autoclean;
 extends 'Form::Sensible::Reflector';
-our $VERSION = "0.0346";
+our $VERSION = "0.0347";
 $VERSION = eval $VERSION;
 
 use Data::Dumper;
@@ -315,7 +315,7 @@ Form::Sensible::Reflector::DBIC - A reflector class based on Form::Sensible and 
 
 =head1 VERSION
 
-version 0.0346
+version 0.0347
 
 =cut
 
@@ -329,11 +329,12 @@ version 0.0346
 
 	my $dt = DateTime->now;
 
-	my $reflector = Form::Sensible::Reflector::DBIC->new( with_trigger => 1);
+	my $reflector = Form::Sensible::Reflector::DBIC->new();
 	my $form      = $reflector->reflect_from(
 	    $schema->resultset("Test"),
 	    {
-	        form   => { name => 'test' }
+	        form   => { name => 'test' },
+	         with_trigger => 1
 	    }
 	);
 	my $renderer = Form::Sensible->get_renderer('HTML');
