@@ -1,46 +1,13 @@
-  $self->field_type_map
-    Hashref of the supported DBMS type->form element translations.
 
-  $self->field_class_options
-    Default options for Form::Sensible field classes.
 
-  $self->get_base_definition($name, $datatype)
-    This gets field definitions for a given datatype and returns them in
-    hashref form.
+This archive contains the distribution Form-Sensible-Reflector-DBIC,
+version 0.349:
 
-$self->get_fieldnames()
-    Get field names for the form, for example, the column names in the
-    table.
+  A Form::Sensible::Reflector subclass to reflect off of DBIC schema classes
 
-$self->get_field_definition()
-    Get a given field's definition.
+This software is copyright (c) 2011 by Devin Austin.
 
-NAME
-    Form::Sensible::Reflector::DBIC - A reflector class based on
-    Form::Sensible and Form::Sensible::Reflector
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
-VERSION
-    version 0.0348
-
-SYNOPSIS
-            my $schema = TestSchema->connect('dbi:SQLite::memory:');
-            $schema->deploy;
-            use Form::Sensible;
-            use Form::Sensible::Reflector::DBIC;
-            ## name must reflect the table which we are reflecting
-
-            my $dt = DateTime->now;
-
-            my $reflector = Form::Sensible::Reflector::DBIC->new();
-            my $form      = $reflector->reflect_from(
-                $schema->resultset("Test"),
-                {
-                    form   => { name => 'test' },
-                     with_trigger => 1
-                }
-            );
-            my $renderer = Form::Sensible->get_renderer('HTML');
-
-            $form->set_values( { date => $dt } );
-            my $output = $renderer->render($form)->complete;
 
